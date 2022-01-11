@@ -1,0 +1,39 @@
+.specification{
+    padding-top: 94px; 
+    padding-bottom: 94px;
+}
+
+.specification__box{
+    display: flex;
+    margin-top: 50px;
+}
+
+.specification__list{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.specification__item{
+    display: flex;
+    display: inline-block;
+}
+
+.specification__text{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    top: 1401px;
+}

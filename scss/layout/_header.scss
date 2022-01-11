@@ -1,0 +1,119 @@
+.head{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top: 80px;
+    
+}
+
+.logo{
+    font-family: var(--secondary-font), sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;  
+}
+
+.nav__links{
+    display: flex;
+    margin: 0;
+    margin-right: 331px;
+}
+
+.nav{
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    
+}
+
+.web-style{
+    color: var(--theme-colour);
+}
+
+.studio-style{
+    color: #000000;
+}
+
+.nav__items:not(:last-child){
+    margin-right: 50px;
+}
+
+
+.nav__link{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: var(--theme-colour);
+    }
+}
+
+
+.active-page{
+    color: var(--theme-colour);
+    &::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: 30px;
+        bottom: auto;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: var(--theme-colour);
+    }
+}
+
+
+
+.link-box{
+    display: flex;
+    margin-left: auto;
+}
+
+.link-box__card-icon{
+    fill: var(--text-secondary);
+    margin-right: 10px;
+}
+
+.link-box__mail,
+.link-box__phone{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--text-secondary); 
+    display: inline-flex;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover .link-box__card-icon,
+    &:focus .link-box__card-icon{
+        fill: var(--theme-colour);
+    }
+    &:hover,
+    &:focus{
+        color: var(--theme-colour);
+}
+}
+
+
+
+
+.link-box__mail{
+    margin-right: 50px;
+}

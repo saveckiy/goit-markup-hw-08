@@ -1,0 +1,41 @@
+body {font-family: var(--primary-font);
+}
+
+ul,li {
+    list-style: none;
+    margin: 0px;
+}
+
+a {text-decoration: none;}
+
+address {font-style: normal;}
+
+h1,h2,h3,p {
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: 0;
+}
+
+ul,li {
+    padding: 0px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-primary);
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;       
+}
