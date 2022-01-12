@@ -2,6 +2,7 @@
     background: #F5F4FA;
     
     @media screen and (min-width: 320px){
+        width: auto;
         flex-direction: column;
         justify-content: center;
     }
