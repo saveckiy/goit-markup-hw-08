@@ -1,7 +1,20 @@
 .team{
     background: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
+    @media screen and (min-width: 320px){
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px){
+
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 1200px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .team__name{
@@ -11,7 +24,7 @@
 .team__list{
     display: flex;
     justify-content: space-between;
-    margin: 0px; 
+    margin: 0px;
 }
 
 .team__item{
@@ -82,3 +95,11 @@
     fill: #AFB1B8;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+// Mobile styles
+
+
+// Tablet styles
+
+
+// Desctop styles

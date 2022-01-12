@@ -190,8 +190,7 @@ h2 {
 }
 
 .link-box__mail:hover, .link-box__mail:focus,
-.link-box__phone:hover,
-.link-box__phone:focus {
+.link-box__phone:hover, .link-box__phone:focus {
   color: var(--theme-colour);
 }
 
