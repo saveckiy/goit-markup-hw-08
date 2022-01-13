@@ -7,16 +7,31 @@
 }
 
 .hero-box__slogan{
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
-    text-align: center;
-    letter-spacing: 0.06em;
+    
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 696px;
-    padding-top: 200px;
-    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    @media screen and (min-width: 320px) {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.8em;
+        padding-top: 118px;
+    }
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) { 
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.3;
+        width: 696px;
+        padding-top: 200px;
+        margin-bottom: 30px;       
+    }
 }
 
 .hero-box__button{

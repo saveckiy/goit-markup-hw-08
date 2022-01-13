@@ -1,11 +1,22 @@
 .specification{
     padding-top: 94px; 
     padding-bottom: 94px;
-}
+    }
 
 .specification__box{
-    display: flex;
-    margin-top: 50px;
+    
+    @media screen and (min-width: 320px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-top: 50px;
+    }
 }
 
 .specification__list{
