@@ -1,10 +1,29 @@
 .hero-box{
-    height: 600px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 118px;
     background: #2F303A;
-    margin: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background_image.jpg);
-    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img_mobile.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img_mobile@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img_tab.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img_tab@2x.jpg);
+        }
+    }
 }
+// url(../img/background_image.jpg)
+// max-width: 1600px;
 
 .hero-box__slogan{
     
@@ -12,26 +31,25 @@
     color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.06em;
-
-    @media screen and (min-width: 320px) {
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.8em;
-        padding-top: 118px;
-    }
-
-    @media screen and (min-width: 768px) {
+    
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.8em;
+    padding-top: 118px;
+    padding-bottom: 30px;
+    
+    // @media screen and (min-width: 768px) {
         
-    }
+    // }
 
-    @media screen and (min-width: 1200px) { 
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.3;
-        width: 696px;
-        padding-top: 200px;
-        margin-bottom: 30px;       
-    }
+    // @media screen and (min-width: 1200px) { 
+    //     font-weight: 900;
+    //     font-size: 44px;
+    //     line-height: 1.3;
+    //     width: 696px;
+    //     padding-top: 200px;
+    //     margin-bottom: 30px;       
+    // }
 }
 
 .hero-box__button{

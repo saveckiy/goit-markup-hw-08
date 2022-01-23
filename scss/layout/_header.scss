@@ -3,52 +3,53 @@
 }
 
 .header{
+    width: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
-    @media screen and (min-width: 320px) {
-        width: auto;
-        height: 60px;
-        display: flex;
-        align-items: center
-    }
+    // @media screen and (min-width: 320px) {
+    // }
 
-    @media screen and (min-width: 768px) {
+    // @media screen and (min-width: 768px) {
         
-    }
+    // }
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        left: 0px;
-        top: 80px;
-        height: 80px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     left: 0px;
+    //     top: 80px;
+    //     height: 80px;
+    // }
 }
 
 .logo{
     font-family: var(--secondary-font), sans-serif;
     font-style: normal;
    
+    font-size: 24px;
+    line-height: 1.16em;
+    letter-spacing: 0.03em;
 
-    @media screen and (min-width: 320px) {
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.03em;
+    // @media screen and (min-width: 320px) {
         
-    }
+    // }
 
-    @media screen and (min-width: 768px) {
+    // @media screen and (min-width: 768px) {
         
-    }
+    // }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 26px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        margin-right: 93px;
-        padding-top: 24px;
-        padding-bottom: 25px;
-    }  
+    // @media screen and (min-width: 1200px) {
+    //     font-size: 26px;
+    //     line-height: 1.2em;
+    //     letter-spacing: 0.03em;
+    //     margin-right: 93px;
+    //     padding-top: 24px;
+    //     padding-bottom: 25px;
+    // }  
 }
 
 
@@ -59,21 +60,21 @@
 }
 
 .nav{
-    
     @media screen and (min-width: 320px) {
         width: auto;
         display: none;
+
     }
 
-    @media screen and (min-width: 768px) {
+    // @media screen and (min-width: 768px) {
         
-    }
+    // }
 
-    @media screen and (min-width: 1200px) {
-        background: #FFFFFF;
-        display: flex;
-        align-items: center;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     background: #FFFFFF;
+    //     display: flex;
+    //     align-items: center;
+    // }
 }
 
 .web-style{
@@ -149,7 +150,7 @@
     &:hover,
     &:focus{
         color: var(--theme-colour);
-}
+    }
 }
 
 
@@ -157,4 +158,13 @@
 
 .link-box__mail{
     margin-right: 50px;
+}
+
+.burger__ico{
+    width: 40px;
+    &:hover,
+    &:focus{
+        border-color: var(--theme-colour);
+        fill: var(--theme-colour);
+    }
 }

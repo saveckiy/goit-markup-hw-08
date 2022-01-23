@@ -1,30 +1,89 @@
 .regular-customers{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
+    margin-top: 60px;
+    // @media screen and (min-width: 320px) {
+    // }
+    
+    // @media screen and (min-width: 768px) {
+        
+    // }
+    
+    // @media screen and (min-width: 1200px) { 
+    //     padding-top: 94px;
+    //     padding-bottom: 94px;
+               
+    // }
 }
 
 .regular-customers__name{
     font-family: var(--primary-font);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
+    color: var(--text-primary);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--text-primary);
+    
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    // @media screen and (min-width: 320px) {
+    // }
+    
+    // @media screen and (min-width: 768px) {
+        
+    // }
+    
+    // @media screen and (min-width: 1200px) { 
+    //     font-style: normal;
+    //     font-weight: bold;
+    //     font-size: 36px;
+    //     line-height: 42px;
+        
+        
+    // }
 }
 
 .regular-customers__box{
+    margin: -15px;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    
+    // @media screen and (min-width: 320px) {
+    // }
+    
+    // @media screen and (min-width: 768px) {
+        
+    // }
+    
+    // @media screen and (min-width: 1200px) { 
+    //     display: flex;
+    //     justify-content: space-between;
+    //     margin-top: 50px;
+        
+    // }
 }
 
 .regular-customers__list{
-    width: 170px;
     height: 92px;
-    box-sizing: border-box;
+    
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+    // @media screen and (min-width: 320px) {
+    // }
+    
+    // @media screen and (min-width: 768px) {
+        
+    // }
+    
+    // @media screen and (min-width: 1200px) { 
+    //     box-sizing: border-box;
+    //     width: 210px;
+        
+    // }
 }
+
+
 
 .regular-customers__link{
     width: 100%;

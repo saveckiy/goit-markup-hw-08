@@ -1,7 +1,19 @@
 .team{
     background: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 320px) {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        
+    }
 }
 
 .team__name{
@@ -44,6 +56,13 @@
 
 .team__card{
     margin-bottom: 30px;
+    img{
+        @media screen and (max-width: 667px) {
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
 }
 
 .team__member-specification{
@@ -59,15 +78,36 @@
 
 .team__social-links{
     display: flex;
-    justify-content: space-between;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-top: 16px;
+    @media screen and (min-width: 320px) {
+        justify-content: center;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 16px;
+        
+    }
 }
 
 .team__social-link{
     display: flex;  
+    @media screen and (min-width: 320px) {
+        margin-bottom: 24px;       
+    }
     
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1200px) {
+
+    }
 }
 
 .link-icon{
