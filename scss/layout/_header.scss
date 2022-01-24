@@ -9,21 +9,19 @@
     align-items: center;
     justify-content: space-between;
     
-    // @media screen and (min-width: 320px) {
-    // }
+    @media screen and (min-width: 768px) {
+        height: 80px;
 
-    // @media screen and (min-width: 768px) {
-        
-    // }
+    }
 
-    // @media screen and (min-width: 1200px) {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     left: 0px;
-    //     top: 80px;
-    //     height: 80px;
-    // }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0px;
+        top: 80px;
+        height: 80px;
+    }
 }
 
 .logo{
@@ -34,22 +32,18 @@
     line-height: 1.16em;
     letter-spacing: 0.03em;
 
-    // @media screen and (min-width: 320px) {
-        
-    // }
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
 
-    // @media screen and (min-width: 768px) {
-        
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     font-size: 26px;
-    //     line-height: 1.2em;
-    //     letter-spacing: 0.03em;
-    //     margin-right: 93px;
-    //     padding-top: 24px;
-    //     padding-bottom: 25px;
-    // }  
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.2em;
+        letter-spacing: 0.03em;
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }  
 }
 
 
@@ -57,24 +51,34 @@
     display: flex;
     margin: 0;
     margin-right: 331px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
 }
 
 .nav{
     @media screen and (min-width: 320px) {
         width: auto;
         display: none;
-
+        
     }
 
-    // @media screen and (min-width: 768px) {
-        
-    // }
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
 
-    // @media screen and (min-width: 1200px) {
-    //     background: #FFFFFF;
-    //     display: flex;
-    //     align-items: center;
-    // }
+    @media screen and (min-width: 1200px) {
+        background: #FFFFFF;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 .web-style{
@@ -125,6 +129,14 @@
 .link-box{
     display: flex;
     margin-left: auto;
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: 84px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        
+    }
 }
 
 .link-box__card-icon{
@@ -157,7 +169,12 @@
 
 
 .link-box__mail{
-    margin-right: 50px;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+    }
 }
 
 .burger__ico{
@@ -166,5 +183,8 @@
     &:focus{
         border-color: var(--theme-colour);
         fill: var(--theme-colour);
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 }

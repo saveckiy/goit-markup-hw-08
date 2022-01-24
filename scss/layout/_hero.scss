@@ -21,8 +21,11 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img_tab@2x.jpg);
         }
     }
+    @media screen and (min-width: 1200px){
+        
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background_image.jpg);
+    }
 }
-// url(../img/background_image.jpg)
 // max-width: 1600px;
 
 .hero-box__slogan{
@@ -38,18 +41,18 @@
     padding-top: 118px;
     padding-bottom: 30px;
     
-    // @media screen and (min-width: 768px) {
-        
-    // }
+    @media screen and (min-width: 768px) {
+        width: 360px;
+    }
 
-    // @media screen and (min-width: 1200px) { 
-    //     font-weight: 900;
-    //     font-size: 44px;
-    //     line-height: 1.3;
-    //     width: 696px;
-    //     padding-top: 200px;
-    //     margin-bottom: 30px;       
-    // }
+    @media screen and (min-width: 1200px) { 
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.3;
+        width: 696px;
+        padding-top: 200px;
+        margin-bottom: 30px;       
+    }
 }
 
 .hero-box__button{
