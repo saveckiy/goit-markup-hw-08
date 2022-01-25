@@ -19,16 +19,17 @@
 }
 
 .footer__nav{
-    @media screen and (min-width: 320px) {
-        text-align: center;
-    }
-    
-    @media screen and (min-width: 768px) {
+    text-align: center;
         
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin-left: 74px;
     }
     
     @media screen and (min-width: 1200px) { 
         margin-right: 70px;
+        margin-left: 0px;
+        text-align: start;
     }
 }
 
@@ -62,20 +63,20 @@
         text-align: center;
     }
     
-    @media screen and (min-width: 768px) {
-        
-    }
-    
     @media screen and (min-width: 1200px) { 
         display: flex;
-        
     }
 }
 
 .footer__social{
-    
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        position: absolute;
+        right: 89px;
+    }
     @media screen and (min-width: 1200px) { 
         margin-right: 62px;
+        position: static;
     }
 
 }
@@ -95,7 +96,6 @@
     }
 
     @media screen and (min-width: 1200px) {
-        
         justify-content: start;
     }
 }
@@ -203,8 +203,11 @@
     }
     
     @media screen and (min-width: 768px) {
-        
-    }
+        width: 450px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: block;
+        }
     
     @media screen and (min-width: 1200px) { 
         width: 358px;
@@ -237,13 +240,10 @@
         display: flex;
     }
     
-    // @media screen and (min-width: 768px) {
-        
-    // }
-    
-    // @media screen and (min-width: 1200px) { 
-    //     margin-left: 12px;
-    // }
+    @media screen and (min-width: 1200px) { 
+        margin-left: 12px;
+    margin-top: 56px;
+    }
 }
 
 .form__sub-ico{

@@ -1,16 +1,22 @@
 .portfolio-box{
-    // padding-bottom: 89px;
-    // padding-top: 99px;
-    // margin-bottom: 34px;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 89px;
+        padding-top: 99px;
+        margin-bottom: 34px; 
+    }
 }
 
 .buttons__list{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
-
-    // justify-content: center;
-    // margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 50px;  
+    }
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
 
 .buttons__item{
@@ -27,12 +33,14 @@
     padding-right: 22px;
     height: 26px;
     
-    // margin-right: 5px;
-    // height: 38px;
     background: #F5F4FA;
     border-radius: 4px;
     border: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+        margin-right: 5px;
+        height: 38px;
+        }
     &:hover,
     &:focus {
         background-color: var(--theme-colour);
