@@ -8,10 +8,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    position: relative;
     @media screen and (min-width: 768px) {
         height: 80px;
-
+        position: inherit;
     }
 
     @media screen and (min-width: 1200px) {
@@ -180,7 +180,28 @@
     }
 }
 
-.burger__ico{
+
+.mobile-menu{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-open-btn{
+    border: none;
+    background: #FFFFFF;
+}
+
+.menu__ico{
     width: 40px;
     &:hover,
     &:focus{
@@ -190,4 +211,99 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
+}
+
+.menu-close-btn{
+    display: block;
+    margin-left: auto;
+    margin-top: 21px;
+    margin-right: 28px;
+    background: #FFFFFF;
+    border: none;
+}
+.icon-close{
+    width: 18px;
+    height: 18px;
+}
+
+.mob__links{
+    margin-left: 40px;
+}
+.mob__items{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: (47/40);
+    letter-spacing: 0.02em;
+    
+    color: var(--text-primary);
+    margin-bottom: 32px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.mob__link-box{
+    margin-left: 40px;
+}
+.mob__link-box__phone{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: (40/34);
+    letter-spacing: 0.02em;
+
+    color: var(--theme-colour);
+}
+.mob-phone__item{
+    margin-bottom: 32px;
+}
+
+.mob__link-box__mail{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: (28/24);
+    letter-spacing: 0.02em;
+    
+    color: var(--text-secondary);
+
+}
+.mob-mail__item{
+    margin-bottom: 64px;
+}
+
+.mob-menu__social-list{
+    display: flex;
+    margin-left: 40px;
+}
+
+.mob-menu__social-item{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: (22/18);
+    letter-spacing: 0.02em;
+
+    color: var(--theme-colour);
+    padding: 0 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    &:last-child{
+        border: none;
+    }
+}
+
+.mob-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 70px);
+}
+
+.active-menu{
+    color: var(--theme-colour);
 }
