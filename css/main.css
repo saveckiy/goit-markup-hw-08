@@ -340,13 +340,14 @@ h2 {
 
 .mobile-menu {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   background: #FFFFFF;
   width: 100vw;
   height: 100vh;
   z-index: 1;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -362,6 +363,7 @@ h2 {
 
 .menu__ico {
   width: 40px;
+  height: 40px;
 }
 
 .menu__ico:hover, .menu__ico:focus {
@@ -384,6 +386,11 @@ h2 {
   border: none;
 }
 
+.menu-close-btn:hover, .menu-close-btn:focus {
+  border-color: var(--theme-colour);
+  fill: var(--theme-colour);
+}
+
 .icon-close {
   width: 18px;
   height: 18px;
@@ -393,6 +400,10 @@ h2 {
   margin-left: 40px;
 }
 
+.mob__link {
+  color: var(--text-primary);
+}
+
 .mob__items {
   font-family: var(--primary-font);
   font-style: normal;
@@ -400,7 +411,6 @@ h2 {
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
-  color: var(--text-primary);
   margin-bottom: 32px;
 }
 
@@ -464,6 +474,10 @@ h2 {
   border: none;
 }
 
+.mob-menu__social-item:first-child {
+  padding-left: 0;
+}
+
 .mob-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -484,6 +498,14 @@ h2 {
 
 .active-menu {
   color: var(--theme-colour);
+}
+
+.mob-menu__social-link {
+  color: var(--theme-colour);
+}
+
+.is-hidden {
+  display: block;
 }
 
 .hero-box {
@@ -1444,7 +1466,7 @@ h2 {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: -72px;
+  left: -86px;
   top: 8px;
   -webkit-transform: translate(482px, 2px);
       -ms-transform: translate(482px, 2px);

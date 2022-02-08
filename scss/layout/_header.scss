@@ -183,14 +183,14 @@
 
 .mobile-menu{
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     background: #FFFFFF;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-
+    display: none;
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -203,6 +203,7 @@
 
 .menu__ico{
     width: 40px;
+    height: 40px;
     &:hover,
     &:focus{
         border-color: var(--theme-colour);
@@ -220,6 +221,11 @@
     margin-right: 28px;
     background: #FFFFFF;
     border: none;
+    &:hover,
+    &:focus{
+        border-color: var(--theme-colour);
+        fill: var(--theme-colour);
+    }
 }
 .icon-close{
     width: 18px;
@@ -229,6 +235,10 @@
 .mob__links{
     margin-left: 40px;
 }
+
+.mob__link{
+    color: var(--text-primary);
+}
 .mob__items{
     font-family: var(--primary-font);
     font-style: normal;
@@ -237,7 +247,6 @@
     line-height: (47/40);
     letter-spacing: 0.02em;
     
-    color: var(--text-primary);
     margin-bottom: 32px;
     &:last-child{
         margin-bottom: 0;
@@ -268,10 +277,9 @@
     font-size: 24px;
     line-height: (28/24);
     letter-spacing: 0.02em;
-    
     color: var(--text-secondary);
-
 }
+
 .mob-mail__item{
     margin-bottom: 64px;
 }
@@ -295,6 +303,9 @@
     &:last-child{
         border: none;
     }
+    &:first-child{
+        padding-left: 0;
+    }
 }
 
 .mob-container{
@@ -306,4 +317,11 @@
 
 .active-menu{
     color: var(--theme-colour);
+}
+
+.mob-menu__social-link{
+    color: var(--theme-colour);
+}
+.is-hidden{
+    display: block;
 }
