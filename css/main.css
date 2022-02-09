@@ -62,18 +62,17 @@ h2 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 767px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1199px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1600px;
+    width: 1200px;
   }
 }
 
@@ -233,6 +232,7 @@ h2 {
 
 .nav__link {
   font-family: var(--primary-font);
+  color: var(--text-primary);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -621,8 +621,22 @@ h2 {
 }
 
 .work-tools {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-tools {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-tools {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -659,7 +673,10 @@ h2 {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .work-tools__list:nth-child(2n+1) {
     margin-right: 30px;
@@ -744,15 +761,12 @@ h2 {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .specification {
-    display: none;
-  }
+.specification {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
   .specification {
-    padding-top: 94px;
     padding-bottom: 94px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -813,7 +827,7 @@ h2 {
   color: #FFFFFF;
   background: rgba(47, 48, 58, 0.8);
   position: absolute;
-  top: 1480px;
+  top: 1383px;
 }
 
 .team {
@@ -838,10 +852,8 @@ h2 {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 320px) {
-  .team__list {
-    width: auto;
-  }
+.team__list {
+  width: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1142,7 +1154,6 @@ h2 {
 @media screen and (min-width: 768px) {
   .footer__nav {
     display: inline-block;
-    margin-left: 74px;
   }
 }
 
@@ -1462,6 +1473,12 @@ h2 {
   padding: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1471,13 +1488,10 @@ h2 {
 
 .modal__close-button {
   position: absolute;
+  right: 8px;
+  top: 8px;
   width: 30px;
   height: 30px;
-  left: -23px;
-  top: 8px;
-  -webkit-transform: translate(482px, 2px);
-      -ms-transform: translate(482px, 2px);
-          transform: translate(482px, 2px);
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 50%;
@@ -1501,17 +1515,12 @@ h2 {
 }
 
 .modal__close-icon {
-  left: 22.22%;
-  right: 16.67%;
-  top: 16.67%;
-  bottom: 22.22%;
   width: 9px;
   height: 9px;
   fill: var(--text-primary);
 }
 
 .modal-text {
-  width: 370px;
   left: 576px;
   top: 261px;
   margin-bottom: 12px;
@@ -1816,7 +1825,22 @@ h2 {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 768px) {
+  .project__list {
+    display: inline-block;
+    width: -webkit-calc((100% - 60px) / 2);
+    width: calc((100% - 60px) / 2);
+  }
+  .project__list:last-child {
+    margin-left: 15px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .project__list {
+    display: block;
+    width: auto;
+  }
   .project__list:nth-child(3n+3) {
     margin-right: 0px;
   }
@@ -1885,6 +1909,18 @@ h2 {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .project__name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__name {
+    font-size: 18px;
+  }
 }
 
 .project__work {

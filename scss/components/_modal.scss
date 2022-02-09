@@ -29,6 +29,12 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px; 
     padding: 40px;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        
+    }
+
     @media screen and (min-width: 1200px) {
         width: 528px;
         height: 581px;
@@ -37,11 +43,11 @@
 
 .modal__close-button{
     position: absolute;
+    right: 8px;
+    top: 8px;
+    // transform: translate(482px, 2px);
     width: 30px;
     height: 30px;
-    left: -23px;
-    top: 8px;
-    transform: translate(482px, 2px);
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -57,10 +63,10 @@
 }
 
 .modal__close-icon{
-    left: 22.22%;
-    right: 16.67%;
-    top: 16.67%;
-    bottom: 22.22%;
+    // left: 22.22%;
+    // right: 16.67%;
+    // top: 16.67%;
+    // bottom: 22.22%;
     width: 9px;
     height: 9px;
     
@@ -68,7 +74,7 @@
 }
 
 .modal-text{
-    width: 370px;
+    // width: 370px;
     left: 576px;
     top: 261px;
     margin-bottom: 12px;

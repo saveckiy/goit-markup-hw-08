@@ -1,13 +1,22 @@
 .work-tools{ 
-    padding-bottom: 94px;
-    padding-top: 94px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
 
 .work-tools__box{
 
     @media screen and (min-width: 768px) {
         flex-wrap: wrap;
-        
     }
 
     @media screen and (min-width: 1200px) {
@@ -24,7 +33,7 @@
     @media screen and (min-width: 768px) {
         width: calc((100% - 60px) / 2);
         flex-wrap: wrap;
-        display: inline-block;
+        display: inline-flex;
         &:nth-child(2n+1) {
             margin-right: 30px;
         }

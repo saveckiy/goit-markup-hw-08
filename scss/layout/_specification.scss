@@ -1,11 +1,7 @@
 .specification{
+    display: none;
     
-    @media screen and (min-width: 320px) {
-        display: none;
-    }
-
     @media screen and (min-width: 1200px) {
-        padding-top: 94px; 
         padding-bottom: 94px;
         display: flex;
     }
@@ -47,5 +43,5 @@
     color: #FFFFFF;
     background: rgba(47, 48, 58, 0.8);
     position: absolute;
-    top: 1480px;
+    top: 1383px;
 }
