@@ -3,7 +3,7 @@
 }
 
 .header{
-    // width: auto;
+    width: auto;
     height: 60px;
     display: flex;
     align-items: center;
@@ -12,6 +12,7 @@
     @media screen and (min-width: 768px) {
         height: 80px;
         position: inherit;
+        width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
