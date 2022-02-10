@@ -69,16 +69,15 @@
 }
 
 .footer__social{
+    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-        display: inline-block;
-        position: absolute;
-        right: 89px;
+        
     }
     @media screen and (min-width: 1200px) { 
         margin-right: 62px;
+        margin-bottom: 0;
         position: static;
     }
-
 }
 
 .footer__links-name{
@@ -145,13 +144,6 @@
 }
 
 .footer__form{
-    @media screen and (min-width: 320px) {
-        
-    }
-    
-    @media screen and (min-width: 768px) {
-        
-    }
     
     @media screen and (min-width: 1200px) { 
         display: flex;
@@ -242,10 +234,24 @@
     
     @media screen and (min-width: 1200px) { 
         margin-left: 12px;
-    margin-top: 56px;
+        margin-top: 56px;
     }
 }
 
 .form__sub-ico{
     margin-left: 10px;
+}
+
+.footer__nav-box{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__nav{
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) { 
+        margin-bottom: 0;
+    }
 }
