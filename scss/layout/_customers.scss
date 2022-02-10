@@ -1,18 +1,11 @@
 .regular-customers{
     
     margin-top: 60px;
-    // @media screen and (min-width: 320px) {
-    // }
     
-    // @media screen and (min-width: 768px) {
-        
-    // }
-    
-    // @media screen and (min-width: 1200px) { 
-    //     padding-top: 94px;
-    //     padding-bottom: 94px;
-               
-    // }
+    @media screen and (min-width: 1200px) { 
+        margin-top: 94px;
+        margin-bottom: 94px; 
+    }
 }
 
 .regular-customers__name{
